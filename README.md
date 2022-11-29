@@ -1,4 +1,4 @@
-# Bootstrap-Portfolio
+# Password Generator
 
 # Description:
 The purpose of this project is to create an application which generates random password, which displays in the browser. 
@@ -24,11 +24,11 @@ The purpose of this project is to create an application which generates random p
 * Positioning corrective statements to ensure selection critera is met 
 
 # Link 
-
+https://ke-l.github.io/passwordGenerator/
 
 
 # Preview
-
+![ke-l github io_passwordGenerator_ (1)](https://user-images.githubusercontent.com/115717787/204668500-9d203aea-9608-436c-bbe9-22ed7c897622.png)
 
 
 # Contact:
