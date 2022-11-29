@@ -3,7 +3,6 @@ var specialCharacters = [
   '@',
   '%',
   '+',
-  '\\',
   '/',
   "'",
   '!',
@@ -88,44 +87,63 @@ var upperCasedCharacters = [
   'Z'
 ];
 
+
+// Introduce variables linked to specification prompts 
 var password =[];
-var passwordLength;
-var lowerCasedCharactersChoice ;
-var upperCasedCharactersChoice ;
-var numericCharactersChoice ;
-var specialCharactersChoice;
-
-
+var passwordLength = 12;
+var lowerCasedCharactersChoice = false;
+var upperCasedCharactersChoice = false;
+var numericCharactersChoice = false;
+var specialCharactersChoice = false;;
 
 // Function to prompt user for password options
 function getPasswordOptions() {
-passwordLength = prompt("How long would you like your password?Please select between: At least 10 characters but no more than 64")
+passwordLength = prompt("How long would you like your password? Please select between 10 - 64 characters")
   console.log(passwordLength);
-lowerCasedCharactersChoice = confirm("Would you like a lower case character (from a-z?")
+lowerCasedCharactersChoice = confirm("Would you like a lower case character?")
   console.log(lowerCasedCharactersChoice);
-upperCasedCharactersChoice = confirm("Would you like to select a upper case character (from A-Z)?")
+upperCasedCharactersChoice = confirm("Would you like to select a upper case character?")
   console.log(upperCasedCharactersChoice);
-numericCharactersChoice = confirm("Would you like to select a numeric character from (0-9)?")
+numericCharactersChoice = confirm("Would you like to select a numeric character?")
   console.log(numericCharactersChoice);
-specialCharactersChoice = confirm("Would you like to select a special character?)");
+specialCharactersChoice = confirm("Would you like to select a special character?");
   console.log(specialCharactersChoice);
   generatePassword()
 }
 getPasswordOptions()
+choices ()
+
 
 // Function for getting a random element from an array
+function choices () {
+if (userLowerCase){
+  
+}
+}
 // map function select random numbers from array? 
 // contact & select from array 
-function getRandom(arr) {
-var randomChoice = arr[Math.floor(Math.random() * arr.length)]
-}
+// function getRandom(arr) {
+// var randomChoice = arr[Math.floor(Math.random() * arr.length)]
+// }
+
+for (var i = 0; i <= passwordLength; i++) {
+  var randomNumber = Math.floor(Math.random() * chars.length);
+  password += chars.substring(randomNumber, randomNumber +1);
+ }
 
 // Function to generate password with user input
 // store object containing password 
 function generatePassword() {
-if (lowerCasedCharactersChoice = true) {getRandom(lowerCasedCharacters)}
-};
-else prompt();
+if (lowerCasedCharactersChoice = true) {getRandom(lowerCasedCharacters)};
+if (upperCasedCharactersChoice = true) {getRandom(upperCasedCharacters)};
+if (numericCharactersChoice = true) {getRandom(numericCharacters)};
+if (specialCharactersChoice = true) {getRandom(specialCharacters) };
+}
+
+// else prompt();
+
+
+
 
 
 // Get references to the #generate element
