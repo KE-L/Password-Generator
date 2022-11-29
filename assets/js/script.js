@@ -90,8 +90,8 @@ var upperCasedCharacters = [
 
 // Introduce variables linked to specification prompts 
 var pLength = 0;
-var lowerChar = false; // default value
-var upperChar = false; // default value
+var lowerChar = false; 
+var upperChar = false; 
 var numChar = false;
 var specChar = false;
 var passArr = [];
@@ -163,14 +163,15 @@ function writePassword() {
   }
   if (pLength < 10 || pLength > 64) {
     generateBtn.disabled = true;
-    alert("Please reload the page and select between 10 and 64 characters");
+    alert("Select between 10 - 64 characters");
     passwordText.value = null;
   }
   if (!lowerChar && !upperChar && !specChar && !numChar) {
     generateBtn.disabled = true;
-    alert("Please reload the page and select atleast one character type");
+    alert("Select at least one character type");
   }
 }
 
 // Add event listener to generate button
+// Displays password to screen 
 generateBtn.addEventListener("click", writePassword);
