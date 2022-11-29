@@ -13,15 +13,15 @@ The purpose of this project is to create an application which generates random p
 * Employing Prompts & confirm to define user choice 
 * Storing variables to inform selection
 * Engaging variables with random function 
-* Introducting a random seletion from each array
-* Reducing charaters repeating in error (trim) 
+* Introducing a random selection from each array
+* Reducing characters repeating in error (trim) 
 * Identifying correct for loop to adapt to varying password length 
 
 
 # Challenges & Lessons:
-* Adapting to password length critera in password generation 
+* Adapting to password length criteria in password generation 
 * Effectively naming classes & ids for streamlined design
-* Positioning corrective statements to ensure selection critera is met 
+* Positioning corrective statements to ensure selection criteria is met 
 
 # Link 
 https://ke-l.github.io/passwordGenerator/
