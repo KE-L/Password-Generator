@@ -99,26 +99,24 @@ var password = "";
 
 // Function to prompt user for password options
 function getPasswordOptions() {
-  var userChoseLength = prompt(
-    "How long do you want your password to be? 10-64"
+  var userLength = prompt(
+    "How long do you want your password to be? Between 10-64 characters"
   );
-  pLength = userChoseLength;
-  var isLower = confirm("Do you want lowercase?");
+  pLength = userLength;
+  var isLower = confirm("Would you like lowercase characters?");
   lowerChar = isLower;
-  var isUpper = confirm("Do you want UPPERCASE?");
+  var isUpper = confirm("Would you like UPPERCASE characters?");
   upperChar = isUpper;
-  var isNumbers = confirm("Do you want numbers?");
+  var isNumbers = confirm("Would you like numbers?");
   numChar = isNumbers;
-  var isSpecial = confirm("Do you want special characters?");
+  var isSpecial = confirm("Would you like special c characters?");
   specChar = isSpecial;
-
 }
 getPasswordOptions();
 choices();
 
 function choices() {
   if (lowerChar) {
-
     passArr.push(lowerCasedCharacters);
   }
   if (upperChar) {
@@ -130,14 +128,12 @@ function choices() {
   if (numChar) {
     passArr.push(numericCharacters);
   }
-
-
 }
 choices();
+
 // Function for getting a random element from an array
-
+// Function to remove duplicate "," & spaces
 let passwordStr = passArr.toString().replaceAll(",", "").trim();
-
 
 // Function to generate password with user input
 function generatePassword() {
@@ -145,7 +141,6 @@ function generatePassword() {
     var randomNum = Math.floor(Math.random() * passwordStr.length);
     password += passwordStr.substring(randomNum, randomNum + 1);
   }
-
   return password;
 }
 
