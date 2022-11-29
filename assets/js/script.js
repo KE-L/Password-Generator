@@ -113,8 +113,8 @@ function getPasswordOptions() {
   specChar = isSpecial;
 }
 getPasswordOptions();
+// Validates choices & issues new array
 choices();
-
 function choices() {
   if (lowerChar) {
     passArr.push(lowerCasedCharacters);
@@ -158,12 +158,12 @@ function writePassword() {
   }
   if (pLength < 10 || pLength > 64) {
     generateBtn.disabled = true;
-    alert("Select between 10 - 64 characters");
+    alert("Please select between 10 - 64 characters");
     passwordText.value = null;
   }
   if (!lowerChar && !upperChar && !specChar && !numChar) {
     generateBtn.disabled = true;
-    alert("Select at least one character type");
+    alert("Please select at least one character type");
   }
 }
 
