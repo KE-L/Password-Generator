@@ -109,7 +109,7 @@ function getPasswordOptions() {
   upperChar = isUpper;
   var isNumbers = confirm("Would you like numbers?");
   numChar = isNumbers;
-  var isSpecial = confirm("Would you like special c characters?");
+  var isSpecial = confirm("Would you like special characters?");
   specChar = isSpecial;
 }
 getPasswordOptions();
